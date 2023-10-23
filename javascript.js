@@ -2,7 +2,9 @@
 console.log('Rock Paper Scissors');
 // player choose
 function getPlayerChoice () {
-  return prompt("Which option would you select (Rock Paper or Scissors)?").toLowerCase()
+  const playerChoice = prompt("Which option would you select (Rock Paper or Scissors)?").toLowerCase();
+  if (playerChoice != 'paper' && playerChoice != 'rock' && playerChoice != 'scissors') return getPlayerChoice();
+  return playerChoice;
 }
 // computer choose
 function getComputerChoice () {
