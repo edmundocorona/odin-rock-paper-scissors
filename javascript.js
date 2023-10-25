@@ -60,15 +60,27 @@ function gameBo5 () {
 
 const btnRock = document.querySelector('#rock');
 btnRock.addEventListener('click', () => {
-  console.log(playRound('rock', getComputerChoice()))
+  const result = playRound('rock', getComputerChoice());
+  const content = document.querySelector('.content');
+  const div = document.createElement('div');
+  div.textContent = result;
+  content.appendChild(div)
 });
 
 const btnPaper = document.querySelector('#paper');
 btnPaper.addEventListener('click', () => {
-  console.log(playRound('paper', getComputerChoice()))
+  const result = playRound('paper', getComputerChoice());
+  const content = document.querySelector('.content');
+  const div = document.createElement('div');
+  div.textContent = result;
+  content.appendChild(div)
 });
 
 const btnScissors = document.querySelector('#scissors');
 btnScissors.addEventListener('click', () => {
-  console.log(playRound('scissors', getComputerChoice()))
+  const result = playRound('scissors', getComputerChoice());
+  const content = document.querySelector('.content');
+  const div = document.createElement('div');
+  div.textContent = result;
+  content.appendChild(div)
 });
