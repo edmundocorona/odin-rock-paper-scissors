@@ -37,7 +37,7 @@ listBtnPlayerSelection.forEach(function (btnPressed) {
     const playerChoice = btnPressed.id;
     const resultRound = playRound(playerChoice, getComputerChoice());
     updateScore(resultRound);
-    displayRoundResult (resultRound);
+    displayRoundResult(resultRound);
   });
 });
 
