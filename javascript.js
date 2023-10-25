@@ -92,6 +92,11 @@ btnRock.addEventListener('click', () => {
     divResult.appendChild(h2);
     divResult.appendChild(p);
     content.appendChild(divResult);
+
+    // end
+    actualRound = 0;
+    playerWins = 0;
+    computerWins = 0;
   }
 });
 
@@ -124,6 +129,11 @@ btnPaper.addEventListener('click', () => {
     divResult.appendChild(h2);
     divResult.appendChild(p);
     content.appendChild(divResult);
+
+    // end
+    actualRound = 0;
+    playerWins = 0;
+    computerWins = 0;
   }
 });
 
@@ -156,5 +166,10 @@ btnScissors.addEventListener('click', () => {
     divResult.appendChild(h2);
     divResult.appendChild(p);
     content.appendChild(divResult);
+
+    // end
+    actualRound = 0;
+    playerWins = 0;
+    computerWins = 0;
   }
 });
