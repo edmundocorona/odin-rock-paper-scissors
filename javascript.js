@@ -34,7 +34,7 @@ function getRockPaperScissors (num) {
     : num == 1 ? 'paper' : 'scissors';
 }
 
-function game () {
+function gameBo5 () {
   const ROUNDS = 5;
   let playerWins = 0;
   let computerWins = 0;
@@ -58,4 +58,17 @@ function game () {
     else console.log("It's a tie!");
 }
 
-game();
+const btnRock = document.querySelector('#rock');
+btnRock.addEventListener('click', () => {
+  console.log(playRound('rock', getComputerChoice()))
+});
+
+const btnPaper = document.querySelector('#paper');
+btnPaper.addEventListener('click', () => {
+  console.log(playRound('paper', getComputerChoice()))
+});
+
+const btnScissors = document.querySelector('#scissors');
+btnScissors.addEventListener('click', () => {
+  console.log(playRound('scissors', getComputerChoice()))
+});
